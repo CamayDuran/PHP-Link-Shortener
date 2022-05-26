@@ -1,0 +1,154 @@
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+	--primary: #e8e8e8;
+	--dark: #30475e;
+	--accent: #f05454;
+}
+a{
+	display: inline-block;
+	padding: 16px;
+	color: var(--accent);
+}
+
+a:hover{
+	color: var(--dark);
+}
+
+.title{
+	font-size: 44px;
+	padding-bottom: 64px;
+	color: var(--dark);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.title img{
+	max-width: 320px;
+	display: block;
+}
+
+form{
+	width: 720px;
+	display: grid;
+	grid-template-columns: 1fr 160px;
+	border: 2px solid var(--dark);
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+form:focus-within,
+form:hover{
+	box-shadow: 0px 8px 16px #24242464;
+}
+
+form input{
+	line-height: 24px;
+	padding: 16px;
+	font-size: 1rem;
+	border: none;
+	outline: none;
+}
+
+form input[type='url']{
+	background-color: #ffffff94;
+}
+
+form input[type='url']:focus,
+form input[type='url']:hover{
+	background-color: white;
+}
+
+form input[type='submit']{
+	background-color: var(--dark);
+	color: var(--primary);
+	cursor: pointer;
+}
+
+form input[type='submit']:hover{
+	background-color: var(--accent);
+	color: white;
+}
+
+.generated{
+	font-size: 32px;
+	padding: 48px 24px;
+	border-radius: 16px;
+	color: var(--accent);
+	margin-top: 48px;
+	background-color: white;
+	width: 720px;
+	text-align: center;
+}
+footer{
+	padding: 24px;
+}
+
+*:focus{
+	outline: none;
+}
+body{
+	font-family: Arial;
+	background: #3498D8;
+	padding: 50px;
+}
+.login{
+	margin: 20px auto;
+	width: 300px;
+}
+.login-screen{
+	background-color: #fff;
+	padding: 20px;
+	border-radius:5px ;
+}
+.app-title{
+	text-align: center;
+	color:#777 ;
+}
+
+.login-form{
+	text-align: center;
+}
+
+.control-group{
+	margin-bottom: 10px;
+}
+input{
+	text-align: center;
+	background-color: #ECF0F1;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 200;
+	padding: 10px 0;
+	width: 250px;
+	transition: border .5s;
+}
+input:focus{
+	border: 2px solid #3498D8;
+	box-shadow: none ;
+}
+.btn{ 
+	border:2px solid transparent;
+	background: #3498D8;
+    color: #ffffff;
+   font-size: 16px;
+   line-height: 25px;
+   padding: 10px 0;
+   text-decoration: none;
+   text-shadow: none;
+   border-radius: 3px;
+   transition: 0.25s;
+   display: block;
+   width: 250px;
+   margin: 0 auto;
+   margin-top: 5px; 
+}
+.btn:hover{
+	background-color: #298089;
+}
