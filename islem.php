@@ -80,8 +80,16 @@ if(isset($_POST['kayit'])){
         else{
             echo "Bir hata oluştu, Tekrar kontrol edin";
         }
+
+
     }
 }
+    
 
+   $sayi2 = mt_rand(0,10); 
 
+  $harf = 'abcdefghijklmnoprstyuvyzxw'; //A'dan Z'ye Türk Alfabesi
+  $harf_sayisi = mb_strlen($harf); //29
+  $secilen_harf_konumu = mt_rand(0, $harf_sayisi - 1); //0 ile 28 arasında rastgele sayı üret
+   echo mb_substr($harf, $secilen_harf_konumu, $sayi2); 
  ?>
